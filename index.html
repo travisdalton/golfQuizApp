@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Golf Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main role="main" class="container">
+        <header role="banner" class="header">
+            <section>
+                <a href="index.html">
+                    <img class="frankClubCover" src="https://www.freewebheaders.com/wp-content/gallery/golf/iron-golf-club-set-website-header.jpg" alt="golf clubs with tiger head cover" />
+                </a>
+            </section>
+            <section>
+                <ul>
+                    <li class="progressCompletedAndCorrect">Question:
+                        <span class="questionNumber">0</span>/8
+                    </li>
+                    <li class="progressCompletedAndCorrect">Score:
+                        <span class="score">0</span>
+                    </li>
+                </ul>
+            </section>
+        </header>
+        <section role="region" class="teeBox">
+            <section class="quizStart box">
+                <h1>Test your golf knowledge!</h1>
+                <img src="https://bdn-ss-fhf.s3.amazonaws.com/uploads/2017/09/AdobeStock_77337827-640x400.jpg
+                " alt="golf ball teed up on the tee box" class="images">
+                <button type="button" class="teeOff button">Tee off!</button>
+            </section>
+            <section class="questionBox box altBox"></section>
+            <section class="response box altBox"></section>
+            <section class="final box altBox"></section>
+        </section>
+    </main>
+   
+    <script 
+    src="https://code.jquery.com/jquery-3.4.1.js" 
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src='index.js'></script>
+</body>
+</html>
