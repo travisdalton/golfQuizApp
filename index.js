@@ -214,21 +214,21 @@ const STORE = [
 
         const perfect = [
             "You're the GOAT!",
-            'images/tigerFistPump.jpg',
-            'Tiger Woods fist pump',
+            'images/tigerWoodsCelebrate.jpg',
+            'Tiger Woods celebrating',
             "You're headed for the tour!"
         ]
 
         const good = [
             "Not Bad!",
-            'images/jackAugusta',
+            'images/jackAugusta.jpg',
             'Jack Nicklaus celebrating 1986 Masters',
             'Better head to the range to polish up a few things!'
         ]
 
         const bad = [
             "Maybe you're left-handed?",
-            'images/tigerDUI',
+            'images/tigerDUI.jpg',
             'Tiger Woods mugshot',
             'Maybe you should try bowling instead.'
         ]
@@ -242,7 +242,7 @@ const STORE = [
         }
         return $('.final').html(
             `<h2>${array[0]}</h2>
-            <img src=${array[1]}" alt=${array[2]} class="images">
+            <img src="${array[1]}" alt="${array[2]}" class="images">
             <h3>You got ${score} / 8</h3>
             <p class="progressSoFar">${array[3]}</p>
             <button type="submit" class="restartButton button">Restart</button>`

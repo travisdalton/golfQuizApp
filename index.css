@@ -1,9 +1,102 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
+    color: black;
+    background-color: white;
 }
 
+.header {
+    text-align: center;
+}
+
+.header li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.header img {
+    width: 100%;
+    height: 150px;
+}
+
+.teeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: solid 1px black;
+}
+
+
+.quizStart,
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto;
+        padding: 1em;
+        border: .1 em black solid;
+        background-color: white;
+    }
+
+    label {
+        display: block;
+        margin-bottom: .5em;
+        padding: .5em;
+        cursor: pointer;
+    }
+
+    .images {
+        margin-bottom: .5em;
+        width: 90%;
+        max-width: 440px;
+    }
+
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: darkgreen;
+    color: white;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    body {
+        background-image: url("courseHeader.jpg");
+    }
+    a {
+        display: none;
+    }
+
+     {
+        
+    }
+}
