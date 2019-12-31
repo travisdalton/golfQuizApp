@@ -128,7 +128,7 @@ const STORE = [
     //start the quiz and hide the start and response and final score
     function startQuiz() {
         $('.altBox').hide();
-        $('.quizStart').on('click', '.startButton', function(event) {
+        $('.quizStart').on('click', '.teeOff', function(event) {
             $('.quizStart').hide();
             $('.questionNumber').text(1);
             $('.questionBox').show();
@@ -142,7 +142,7 @@ const STORE = [
             event.preventDefault();
             $('.altBox').hide();
             $('.response').show();
-            let selected = $('input:checkd');
+            let selected = $('input:checked');
             let answer = selected.val();
             let correct = STORE[questionNumber].correctAnswer;
             if (answer === correct) {
@@ -173,6 +173,7 @@ const STORE = [
         .appendTo(fieldSelector);
         return formMaker;
     }
+
 
     //if answer is correct provide feedback
     function correctAnswer() {
@@ -254,7 +255,7 @@ const STORE = [
             event.preventDefault();
             resetStats();
             $('.altBox').hide();
-            $('.startQuiz').show();
+            $('.quizStart').show();
         });
     }
 
