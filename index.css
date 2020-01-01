@@ -17,13 +17,13 @@ body {
 
 .header li {
     display: inline-block;
-    margin: 5px;
+    margin: 15px;
     font-size: 25px;
 }
 
 .header img {
+    height: 300px;
     width: 100%;
-    height: 150px;
 }
 
 .teeBox {
@@ -34,7 +34,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    border: solid 1px black;
 }
 
 
@@ -47,7 +46,6 @@ body {
         text-align: center;
         margin: auto;
         padding: 1em;
-        border: .1 em black solid;
         background-color: white;
     }
 
@@ -84,3 +82,14 @@ p {
     font-size: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        height: 150px;
+    }
+}
